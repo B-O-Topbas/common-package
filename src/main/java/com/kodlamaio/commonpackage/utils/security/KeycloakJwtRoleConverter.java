@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class KeycloakJwtRoleConverter implements Converter<Jwt, Collection<GrantedAuthority>> {
-    private final static String ROLEPREFIX = "ROLE";
+    private final static String ROLEPREFIX = "ROLE_";
 
     @Override
     public Collection<GrantedAuthority> convert(Jwt jwt) {
